@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../libs/meu-estilo.css">
+    <script src="../libs/meu-script.js"></script>
+</head>
+<body>
+    <div class="my-lg">
+        <h5 data-id="page-title"></h5>
+    </div>
+
+    <div class="my-lg">
+        <pre data-id="output"></pre>
+    </div>
+<script>
+    const linha = () => toLog('-'.repeat(30));
+    /*
+    do {
+        // Bloco executado na primeira vez
+        // e continuaa ser executado enquanto a condição for verdadeira
+    } while(CONDIÇÃO)
+    */
+
+    toLog(`Antes do loop while`);
+
+    linha();
+
+    let idade = 15;
+
+    do {
+        if (idade === 16) {
+            break;
+        }
+
+        toLog(`do/while -> Menor de idade. Idade atual: ${idade}`);
+        idade = idade +1;
+    } while(false)
+
+    linha();
+    idade = 15;
+
+    while(false) {
+        if (idade === 16) {
+            break;
+        }
+
+        toLog(`while -> Menor de idade. Idade atual: ${idade}`);
+        idade = idade +1;
+    }
+
+    linha();
+
+    let usuarios = [
+        {
+            nome: 'Pedro',
+        },
+        {
+            nome: 'Paulo',
+        },
+        {
+            nome: 'João',
+        },
+    ];
+
+    let posicao = 0;
+    let usuario = usuarios[posicao];
+    do {
+        toLog(`Usuario: ${usuario.nome}`);
+        posicao = posicao + 1;
+        usuario = usuarios[posicao];
+    } while(usuario)
+
+    linha();
+
+    toLog(`Depois do loop while`);
+</script>
+</body>
+</html>

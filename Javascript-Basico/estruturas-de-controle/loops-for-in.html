@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../libs/meu-estilo.css">
+    <script src="../libs/meu-script.js"></script>
+</head>
+<body>
+    <div class="my-lg">
+        <h5 data-id="page-title"></h5>
+    </div>
+
+    <div class="my-lg">
+        <pre data-id="output"></pre>
+    </div>
+<script>
+    const linha = () => toLog('-'.repeat(30));
+    // for(
+    //     /* variavel in objeto */
+    // ) {
+    //     /* bloco execução */
+    // }
+
+    toLog(`Antes do loop for`);
+
+    linha();
+
+    let pessoa = {
+        nome: 'Pedro',
+        email: 'pedro@site.com',
+        idade: 40,
+    };
+
+    linha();
+
+    for (key in pessoa) {
+        toLog(`${key}: ` + pessoa[key]);
+    }
+
+    linha();
+
+    Object.keys(pessoa).forEach(key  => {
+        toLog(`OBJECT KEYS : ${key}: ` + pessoa[key]);
+    })
+
+    linha();
+
+    toLog(`Nome da pessoa: ` + pessoa.nome);
+    toLog(`Nome da pessoa: ` + pessoa['nome']);
+
+    linha();
+
+    toLog(`Depois do loop for`);
+</script>
+</body>
+</html>

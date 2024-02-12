@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #itemx {
+            color: aqua;
+        }
+        .brown.verde {
+            color: blueviolet;
+        }
+        #xyz.brown.verde {
+            color: blueviolet;
+        }
+        .brown {
+            color: brown !important;
+            background-color: teal;
+        }
+        .verde {
+            color: greenyellow !important;
+        }
+        .nao-vou-usar {
+            color: pink;
+        }
+        .letra-maiuscula {
+            text-transform: uppercase;
+        }
+        li {
+            color: gray !important;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="verde">Item 1</li>
+            <li class="verde">Item 2</li>
+            <li class="classe-que-nao-existe">Item 3</li>
+            <li class="brown">Item 4</li>
+            <li class="letra-maiuscula">Item 5</li>
+            <li class="brown letra-maiuscula">Item 6</li>
+            <li class="brown verde">Item 7</li>
+            <li>Item 8</li>
+            <li id="xyz" class="brown verde">Item 9</li>
+        </ul>
+    </div>
+</body>
+</html>

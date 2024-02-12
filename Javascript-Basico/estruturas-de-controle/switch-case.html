@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../libs/meu-estilo.css">
+    <script src="../libs/meu-script.js"></script>
+</head>
+<body>
+    <div class="my-lg">
+        <h5 data-id="page-title"></h5>
+    </div>
+
+    <div class="my-lg">
+        <pre data-id="output"></pre>
+    </div>
+<script>
+    let today = new Date('2024-02-01 14:45');
+    let weekDay = today.getDay();
+    let phrase = '';
+
+    /*
+    switch (weekDay) {
+        case 0:
+            phrase = 'Tenha um ótimo domingo'
+        break;
+
+        case 1:
+            phrase = 'Tenha uma ótima segunda'
+        break;
+
+        case 2:
+            phrase = 'Tenha uma ótima terça'
+        break;
+
+        case 3:
+            phrase = 'Tenha uma ótima quarta'
+        break;
+
+        case 4:
+            phrase = 'Tenha uma ótima quinta'
+        break;
+
+        case 5:
+            phrase = 'Tenha uma ótima sexta'
+        break;
+
+        case 6:
+            phrase = 'Tenha um ótimo sábado'
+        break;
+
+        default:
+            phrase = 'Tenha um ótimo dia'
+            break;
+    }
+    */
+
+    /*
+    switch (weekDay) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+            phrase = 'Tenha um ótimo dia de trabalho'
+        break;
+
+        case 6:
+        case 0:
+            phrase = 'Tenha um ótimo fim de semana'
+        break;
+
+        default:
+            phrase = 'Tenha um ótimo dia'
+            break;
+    }
+    */
+
+    getPhrase = function(weekDay) {
+        switch (weekDay) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                phrase = 'Tenha um ótimo dia de trabalho'
+            return phrase;
+
+            case 6:
+            case 0:
+                phrase = 'Tenha um ótimo fim de semana'
+            return phrase;
+
+            default:
+                phrase = 'Tenha um ótimo dia'
+                return phrase;
+        }
+    };
+
+    weekDay = 0;
+    phrase = getPhrase(weekDay);
+
+    toLog([phrase, weekDay]);
+</script>
+</body>
+</html>

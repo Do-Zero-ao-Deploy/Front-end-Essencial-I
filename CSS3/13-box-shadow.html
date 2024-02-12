@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-box {
+            width: 40%;
+            margin-top: 5rem;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 0.2rem;
+            box-shadow: 7px 7px 8px black;
+            cursor: pointer;
+        }
+        .my-box:hover {
+            box-shadow: 8px 8px 10px black;
+        }
+
+        .imagem-sombreada {
+            box-shadow: 0 0 10px gray;
+        }
+
+        .imagem-sombreada:hover {
+            box-shadow: 2px 2px 15px gray;
+        }
+        .mt-4 {
+            margin-top: 4rem;
+        }
+
+        .border-circle {
+            border-radius: 50%;
+        }
+        .border-custom {
+            border-top-left-radius: 3rem;
+            border-top-right-radius: 3rem;
+            border-bottom-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+        }
+        .border-domo {
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-box">
+        Conteúdo
+    </div>
+
+    <div class="mt-4">
+        <img
+            class="border-domo imagem-sombreada"
+            src="https://picsum.photos/id/237/200/200" alt="">
+
+        <img
+            class="border-custom imagem-sombreada"
+            src="https://picsum.photos/id/237/300/200" alt="">
+        <img
+            class="imagem-sombreada"
+            src="https://fastly.picsum.photos/id/237/200/200.jpg?hmac=zHUGikXUDyLCCmvyww1izLK3R3k8oRYBRiTizZEdyfI" alt="">
+
+        <img
+            class="border-circle imagem-sombreada"
+            src="https://fastly.picsum.photos/id/237/200/200.jpg?hmac=zHUGikXUDyLCCmvyww1izLK3R3k8oRYBRiTizZEdyfI" alt="">
+
+        <img
+            class="border-circle imagem-sombreada"
+            src="https://picsum.photos/id/237/200/300" alt="">
+
+        <img
+            class="border-circle imagem-sombreada"
+            src="https://picsum.photos/id/237/300/200" alt="">
+
+    </div>
+</body>
+</html>

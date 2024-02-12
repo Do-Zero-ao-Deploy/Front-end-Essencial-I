@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form
+        action="http://0.0.0.0:8005/back-end.php?chave=valor"
+        target="_blank"
+        method="POST"
+    >
+        <select name="setor">
+            <option value="adm">adm</option>
+            <option value="fin">fin</option>
+            <option value="suporte">suporte</option>
+        </select>
+
+        <select name="itens[]" multiple>
+            <option value="1">Item 1</option>
+            <option value="2">Item 2</option>
+            <option value="3">Item 3</option>
+            <option value="4">Item 4</option>
+            <option value="5">Item 5</option>
+            <option value="6">Item 6</option>
+            <option value="7">Item 7</option>
+            <option value="8">Item 8</option>
+            <option value="9">Item 9</option>
+            <option value="10">Item 10</option>
+        </select>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>

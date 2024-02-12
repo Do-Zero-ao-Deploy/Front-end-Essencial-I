@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [item] { /* Todos os elementos com o atributo 'item'*/
+            color: blue;
+        }
+        [item=""] { /* Com o atributo 'item' sem valor */
+            color: red;
+        }
+        [item^="abc"] { /* Com o atributo 'item' cujo valor começa com 'abc' */
+            color: green;
+        }
+        [item$="abc"] { /* Com o atributo 'item' cujo valor termina em 'abc' */
+            color: yellow;
+        }
+        [item*="def"] { /* Com o atributo 'item' cujo valor contem 'def' */
+            color: brown;
+        }
+        [item~="def"] { /* Com o atributo 'item' cujo valor contem 'def' especificamente */
+            color: sandybrown;
+        }
+        [item~="def"][item~="xyz"] { /* Com o atributo 'item' cujo valor contem 'def' E 'xyz' especificamente */
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li item="1">Item 1</li>
+        <li item="2">Item 2</li>
+        <li item="3">Item 3</li>
+        <li item="">Item 4</li>
+        <li item>Item 5</li>
+        <li item="abc123">Item 6</li>
+        <li item="abc456">Item 7</li>
+        <li item="abc789">Item 8</li>
+        <li item="abcxyz">Item 9</li>
+        <li item="cvbabc">Item 10</li>
+        <li item="meu-item-def-123">Item 11</li>
+        <li item="meu item def 123">Item 12</li>
+        <li item="def">Item 13</li>
+        <li item="abc1 def">Item 14</li>
+        <li item="def abc2">Item 15</li>
+        <li item="defabc2">Item 15</li>
+        <li item="def xyz">Item 16</li>
+        <li item="xyz">Item 17</li>
+    </ul>
+</body>
+</html>

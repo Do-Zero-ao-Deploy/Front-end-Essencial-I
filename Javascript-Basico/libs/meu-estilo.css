@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+pre[data-id="output"] {
+    background-color: lightgray;
+    color: darkslategray;
+    padding: 0.2rem;
+}
+
+.my-lg {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

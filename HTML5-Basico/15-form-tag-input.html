@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form
+        action="http://0.0.0.0:8005/back-end.php"
+        target="_blank"
+    >
+        <div>
+            <p>Selecione suas preferências:</p>
+            <label for="tec_php">
+                PHP
+                <input
+                    id="tec_php"
+                    name="tech[]"
+                    value="php"
+                    type="checkbox"
+                >
+            </label>
+            <label for="tec_java">
+                java
+                <input
+                    id="tec_java"
+                    name="tech[]"
+                    value="java"
+                    type="checkbox"
+                >
+            </label>
+        </div>
+
+        <div>
+            <p>Sexo:</p>
+            <label for="sexo_m">
+                Masculino
+                <input
+                    id="sexo_m"
+                    name="sexo"
+                    value="m"
+                    type="radio"
+                >
+            </label>
+            <label for="sexo_f">
+                Feminino
+                <input
+                    id="sexo_f"
+                    name="sexo"
+                    value="f"
+                    type="radio"
+                >
+            </label>
+        </div>
+
+        <!--
+        <ul>
+            <li><input name="text" placeholder="text" type="text"></li>
+            <li><input name="password" placeholder="password" type="password"></li>
+            <li><input name="number" placeholder="number" type="number"></li>
+            <li><input name="date" placeholder="date" type="date"></li>
+            <li><input name="datetime" placeholder="datetime" type="datetime-local"></li>
+            <li><input name="color" placeholder="color" type="color"></li>
+            <li><input name="button" placeholder="button" type="button" value="Botao"></li>
+            <li><input name="hidden" placeholder="hidden" type="hidden"></li>
+            <li><input name="checkbox" placeholder="checkbox" type="checkbox"></li>
+            <li>
+                <input name="radio" placeholder="radio" type="radio" name="sexo" value="m">
+                <input name="radio" placeholder="radio" type="radio" name="sexo" value="f">
+            </li>
+            <li><input name="week" placeholder="week" type="week"></li>
+            <li><input name="url" placeholder="url" type="url"></li>
+            <li><input name="email" placeholder="email" type="email"></li>
+            <li><input name="time" placeholder="time" type="time"></li>
+            <li><input name="range" placeholder="range" type="range"></li>
+            <li><input name="submit" placeholder="submit" type="submit" value="Enviar"></li>
+            <li><input name="text" placeholder="text" type="text"></li>
+            <li><input name="text" placeholder="text" type="text"></li>
+        </ul>
+        -->
+
+        <!--
+        <select name="setor">
+            <option value="adm">adm</option>
+            <option value="fin">fin</option>
+            <option value="suporte">suporte</option>
+        </select>
+
+        <textarea name="conteudo" placeholder="Conteúdo" cols="30" rows="10"></textarea>
+        -->
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>

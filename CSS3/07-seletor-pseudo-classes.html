@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        - `:focus`
+        - `:hover`
+        - `:checked`
+        */
+
+        input {
+            color: blueviolet;
+        }
+
+        input:focus {
+            color: green;
+        }
+
+        a:hover {
+            color: tomato;
+        }
+
+        input:hover {
+            color: brown;
+            font-weight: bold;
+        }
+
+        div a:hover {
+            color: tomato;
+            font-weight: bold;
+        }
+
+        .border-1 {
+            border: 1px solid brown;
+        }
+
+        input[type="checkbox"]:checked {
+            margin-left: 25px;
+        }
+
+        /* input[type="checkbox"][checked] {
+            margin-left: 55px;
+        } */
+
+        input[required] {
+            border: 5px solid darkred;
+            color: teal;
+        }
+
+        input:required {
+            border: 5px solid violet;
+            color: yellow;
+        }
+
+        /* input:required:invalid { */
+        input[type="email"]:invalid {
+            border: 5px solid red;
+            background-color: yellow;
+            color: red;
+        }
+
+        .pai, .pai div {
+            border: 1px solid steelblue;
+            margin: 10px;
+        }
+
+        .pai div:first-child {
+            background: cadetblue;
+        }
+
+        .pai div:last-child {
+            background: yellowgreen;
+        }
+
+        .pai div:nth-child(1) {
+            background: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre nós</a>
+        <a href="#">Contato</a>
+    </div>
+    <div><input type="text" value="abc123"></div>
+    <div><input type="text" value="abc123"></div>
+    <div><input type="text" value="abc123"></div>
+
+    <form action="">
+        <div><input type="text" value="item required" required></div>
+        <div><input type="text" value="item NÃO required"></div>
+        <div><input type="email" value=""></div>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div><a href="#1">Algum texto</a></div>
+
+    <div class="border-1">
+        <input type="checkbox" name="" id="" checked>
+    </div>
+
+    <div class="pai">
+        <div>Conteudo da div 1</div>
+        <div>Conteudo da div 2</div>
+        <div>Conteudo da div 3</div>
+        <div>Conteudo da div 4</div>
+        <div>Conteudo da div 5</div>
+    </div>
+</div>
+</body>
+</html>

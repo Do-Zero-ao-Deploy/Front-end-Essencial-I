@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*
+        - `::after`
+        - `::before`
+        - `::first-letter`
+        - `::first-line`
+        */
+
+        p span {
+            color: blue;
+        }
+
+        p span::before {
+            content: ">";
+            color: red;
+        }
+        p span::after {
+            content: "<";
+            color: yellow;
+        }
+
+        p.first-letter::first-letter {
+            font-size: 3rem;
+            color: firebrick;
+        }
+
+        div.div-first-line p:first-child::first-line {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <p>Abc <span>def</span> ghi</p>
+        <p class="first-letter">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam veniam, sint voluptas quo enim tempora! Temporibus, recusandae fugiat. Reprehenderit dicta officiis eaque! Dignissimos, dolore! Suscipit perspiciatis eos laudantium quasi obcaecati veniam natus animi, cupiditate similique dolore assumenda debitis ut corrupti atque consectetur dolor inventore quam vitae nam. Eos, odio omnis?</p>
+    </div>
+
+    <div class="div-first-line">
+        <p>Parágrafo 1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur veniam corporis asperiores accusamus excepturi, reiciendis voluptate? Quae officia adipisci, non enim totam quos recusandae quia voluptatem odio. Alias tenetur laborum facilis hic veniam esse, accusantium odio perspiciatis praesentium minus explicabo possimus mollitia cum culpa quam earum dolor ad! Dolorem, adipisci?</p>
+        <p>Parágrafo 2. Lorem ipsum, dolor sit amet consectetur</p>
+        <p>Parágrafo 3. Lorem ipsum, dolor sit amet consectetur</p>
+    </div>
+</div>
+</body>
+</html>

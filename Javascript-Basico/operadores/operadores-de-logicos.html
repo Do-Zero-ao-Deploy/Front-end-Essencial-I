@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            height: 10vh;
+        }
+    </style>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>true</td>
+        <td>&&</td>
+        <td>true</td>
+        <td>=</td>
+        <td>true</td>
+        <td>se todos forem verdadeiros</td>
+    </tr>
+    <tr>
+        <td>false</td>
+        <td>&&</td>
+        <td>true</td>
+        <td>=</td>
+        <td>false</td>
+        <td>se todos forem verdadeiros</td>
+    </tr>
+    <tr>
+        <td>true</td>
+        <td>||</td>
+        <td>false</td>
+        <td>=</td>
+        <td>true</td>
+        <td>se ao menos 1 fore verdadeiro</td>
+    </tr>
+    <tr>
+        <td>false</td>
+        <td>||</td>
+        <td>false</td>
+        <td>=</td>
+        <td>false</td>
+        <td>se ao menos 1 fore verdadeiro</td>
+    </tr>
+</table>
+
+<script>
+// Tabela verdade E (&&) e OU (||)
+
+// Ou
+true  || true  // true
+true  || false // true
+false || true  // true
+false || false // false
+
+// E
+true  && true  // true
+true  && false // false
+false && true  // false
+false && false // false
+</script>
+</body>
+</html>

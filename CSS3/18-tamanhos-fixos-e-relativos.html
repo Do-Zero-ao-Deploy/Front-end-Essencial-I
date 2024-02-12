@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-aquamarine {
+            background-color: aquamarine;
+        }
+
+        .linha {
+            width: 100%;
+            padding: 1%;
+            margin: 0;
+        }
+
+        .coluna {
+            width: 20.5%;
+            height:auto;
+            padding: 1%;
+            margin: 1%;
+            float: left;
+        }
+
+        .texto-pai {
+            font-size: 15pt;
+        }
+
+        .texto-simples-2 {
+            font-size: 1.5rem;
+        }
+
+        .texto-simples-3 {
+            font-size: 151%;
+        }
+
+        @media (max-width: 800px) {
+            .coluna {
+                width: 45%;
+            }
+
+            .bg-aquamarine {
+                background-color: seagreen;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .coluna {
+                width: 90%;
+                float: none;
+                margin: 1% auto;
+            }
+
+            .bg-aquamarine {
+                background-color: blueviolet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="linha texto-pai">
+        <div class="coluna bg-aquamarine">Caixa 1</div>
+        <div class="coluna bg-aquamarine texto-simples-2">Caixa 2</div>
+        <div class="coluna bg-aquamarine texto-simples-3">Caixa 3</div>
+        <div class="coluna bg-aquamarine">Caixa 4</div>
+        <div class="coluna bg-aquamarine">Caixa 5</div>
+        <div class="coluna bg-aquamarine">Caixa 6</div>
+        <div class="coluna bg-aquamarine">Caixa 7</div>
+        <div class="coluna bg-aquamarine">Caixa 8</div>
+    </div>
+</body>
+</html>

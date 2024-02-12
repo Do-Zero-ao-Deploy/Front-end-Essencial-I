@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../libs/meu-estilo.css">
+    <script src="../libs/meu-script.js"></script>
+</head>
+<body>
+    <div class="my-lg">
+        <h5 data-id="page-title"></h5>
+    </div>
+
+    <div class="my-lg">
+        <pre data-id="output"></pre>
+    </div>
+<script>
+    // for(
+    //     /* parte 1 inicialização */;
+    //     /* parte 2 validação */;
+    //     /* parte 4 incrementação */
+    // ) {
+    //     /* parte 3 execução */
+    // }
+
+    toLog(`Antes do loop for`);
+
+    toLog('-'.repeat(15));
+
+    for (idade = 15; idade < 18; idade = idade + 1) {
+        toLog(`Menor de idade. ${idade} anos`);
+    }
+
+    toLog('-'.repeat(15));
+
+    for (executou = false; !executou; executou = true) {
+        toLog(`Executou!!`);
+    }
+
+    toLog('-'.repeat(15));
+
+    executou = false;
+    for (/*  */ ;!executou; /*  */) {
+        toLog(`Executou de novo!`);
+        executou = true
+    }
+
+    toLog('-'.repeat(15));
+
+    for (
+        nome = 'Tiago',
+        idade = 8,
+        cpf = '545454'
+        ; idade < 18;
+    ) {
+        toLog(`A criança ${nome} é menor de idade pois tem ${idade} anos`);
+        idade = idade + 1
+    }
+
+    toLog('-'.repeat(15));
+
+    for (i = 10; i <= 20; i = i + 1) {
+        toLog(`Valor de i: ${i}`);
+
+        if (i === 15) {
+            break;
+        }
+    }
+
+    toLog('-'.repeat(15));
+
+    let nomes = [
+        'Pedro',
+        'Paulo',
+        'Matias',
+        'Tiago',
+        'João',
+        'Elias',
+        'Eliseu',
+        'Josias',
+        'Saulo',
+    ];
+
+    toLog(`Nome ` + nomes[0]);
+    toLog(`Nome ` + nomes[1]);
+    toLog(`Nome ` + nomes[4]);
+    toLog(`Total de nomes: ` + nomes.length);
+
+    toLog('-'.repeat(15));
+
+    for (i = 0; i < nomes.length; i = i + 1) {
+        toLog(`:: Nome ` + nomes[i]);
+    }
+    toLog('-'.repeat(15));
+
+    toLog(`Depois do loop for`);
+</script>
+</body>
+</html>

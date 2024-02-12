@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../libs/meu-estilo.css">
+    <script src="../libs/meu-script.js"></script>
+</head>
+<body>
+    <div class="my-lg">
+        <h5 data-id="page-title"></h5>
+    </div>
+
+    <div class="my-lg">
+        <pre data-id="output"></pre>
+    </div>
+<script>
+    const linha = () => toLog('-'.repeat(30));
+    // for(
+    //     /* variavel in interavel */
+    // ) {
+    //     /* bloco execução */
+    // }
+
+    toLog(`Antes do loop forEach`);
+
+    linha();
+
+    let patriarcas = [
+        {
+            nome: 'Abraão',
+            pai: '',
+        },
+        {
+            nome: 'Isaque',
+            pai: 'Abraão',
+        },
+        {
+            nome: 'Jacó',
+            pai: 'Isaque',
+        },
+    ];
+
+    linha();
+
+    for (patriarca of patriarcas) {
+        toLog('for...of: ' + patriarca.nome + ' filho de ' + patriarca.pai);
+    }
+
+    linha();
+
+    patriarcas.forEach(function(patriarca) {
+        toLog('forEach: ' + patriarca.nome + ' filho de ' + patriarca.pai);
+    })
+
+    linha();
+
+    toLog(`Depois do loop forEach`);
+</script>
+</body>
+</html>

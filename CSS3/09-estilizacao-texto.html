@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #000;
+        }
+
+        .cor-rosa {
+            color: #f502d0;
+        }
+        .cor-amarela {
+            color: #f5cc02;
+        }
+
+        .fundo-amarelo {
+            background: #f5cc02;
+        }
+        .fundo-rosa {
+            background: #f502d0;
+        }
+
+        .negrito {
+            font-weight: bold;
+        }
+
+        .texto-tamanho-h1 {
+            font-size: 2rem;
+        }
+        a {
+            text-decoration: underline;
+            color: #4b6d99;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="cor-rosa">Texto na tag H1</h1>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p class="cor-rosa">Algum texto na tag 'p'</p>
+        <strong class="fundo-amarelo cor-rosa">Algum texto na tag 'strong'</strong>
+        <p>Lorem ipsum dolor sit <strong>tag strong</strong> amet consectetur adipisicing elit. Consequatur sint debitis delectus ad, accusantium dolorum?</p>
+        <p>Lorem ipsum dolor sit <span>tag span</span> amet consectetur adipisicing elit. Consequatur sint debitis delectus ad, accusantium dolorum?</p>
+        <p>Lorem ipsum dolor sit <span class="negrito">tag span com a classe negrito</span> amet consectetur adipisicing elit. Consequatur sint debitis delectus ad, accusantium dolorum?</p>
+        <p class="texto-tamanho-h1 negrito">Parágrafo com classe que simula a tag H1</p>
+        <p>Lorem ipsum dolor sit <a href="#">um link aqui</a> amet consectetur.</p>
+    </div>
+</body>
+</html>

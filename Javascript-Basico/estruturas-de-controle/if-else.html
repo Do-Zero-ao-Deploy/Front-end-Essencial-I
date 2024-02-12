@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../libs/meu-estilo.css">
+    <script src="../libs/meu-script.js"></script>
+</head>
+<body>
+<pre data-id="output"></pre>
+<script>
+    let today = new Date('2024-02-03 14:45');
+    let weekDay = today.getDay();
+    let phrase = '';
+
+    /*
+    if (weekDay === 1 || weekDay === 2 || weekDay === 3 || weekDay === 4 || weekDay === 5) {
+        phrase = 'Tenha um ótimo dia de trabalho'
+    } else {
+        phrase = 'Tenha um ótimo fim de semana'
+    }
+    */
+
+    /*
+    if (weekDay === 0 || weekDay === 6) {
+        phrase = 'Tenha um ótimo fim de semana'
+    } else {
+        phrase = 'Tenha um ótimo dia de trabalho'
+    }
+    */
+
+    /*
+    if ([1, 2, 3, 4, 5].includes(weekDay)) {
+        phrase = 'Tenha um ótimo dia de trabalho'
+    } else {
+        phrase = 'Tenha um ótimo fim de semana'
+    }
+    */
+
+    /*
+    if (weekDay === 0) {
+        phrase = 'Tenha um ótimo domingo'
+    } else if (weekDay === 1) {
+        phrase = 'Tenha uma ótima segunda'
+    } else if (weekDay === 2) {
+        phrase = 'Tenha uma ótima terça'
+    } else if (weekDay === 3) {
+        phrase = 'Tenha uma ótima quarta'
+    } else if (weekDay === 4) {
+        phrase = 'Tenha uma ótima quinta'
+    } else if (weekDay === 5) {
+        phrase = 'Tenha uma ótima sexta'
+    } else if (weekDay === 6) {
+        phrase = 'Tenha um ótimo sábado'
+    } else {
+        phrase = 'Tenha um ótimo dia'
+    }
+    */
+
+    // ternary | ternário
+    phrase = [1, 2, 3, 4, 5].includes(weekDay) ? 'Tenha um ótimo dia de trabalho' : 'Tenha um ótimo fim de semana'
+
+    toLog([phrase]);
+</script>
+</body>
+</html>

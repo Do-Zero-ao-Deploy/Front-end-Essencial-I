@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+let pessoa = { // Object
+        nome: 'Tiago', // String
+        idade: 90, // Number - integer
+        sexo: 'm', // String
+        peso: 120, // Number - integer
+        altura: 1.82, // Number - float
+    }
+let pessoas = [ // Array
+    { // Object
+        nome: 'Tiago', // String
+        idade: 90, // Number - integer
+        sexo: 'm', // String
+        peso: 120, // Number - integer
+        altura: 1.82, // Number - float
+    },
+    { // Object
+        nome: 'Pedro', // String
+        idade: 80, // Number - integer
+        sexo: 'm', // String
+        peso: 100, // Number - integer
+        altura: 1.52, // Number - float
+    },
+]
+
+let nomes = ['Pedro', 'Tiago', 'João'] // Array
+
+let toNumber = function(num) { // Function
+    return !isNaN(num - 0) ? (num - 0) : 0;
+}
+
+let usuarios = function () { // Function
+    return [1, 2, 3];
+}
+
+let clientes = () => { // Function
+    return [1, 2, 3];
+}
+
+let clientesNovos = () =>  [1, 2, 3]; // Function
+
+let resultado1 = 'aaaa' -0 // NaN
+let resultado2 = 0 - 'aaa1aaa' // NaN
+
+let resultado3 = isNaN(resultado1) // Boolean - true
+let resultado4 = isNaN(resultado2) // Boolean - true
+
+let teste; // undefined
+
+let soma = function(val1, val2) {
+    toNumber(val1) + toNumber(val2); // Nao retorna qualquer valor...
+}
+
+let resultado5 = soma(1, 6) // undefined
+</script>
+</body>
+</html>

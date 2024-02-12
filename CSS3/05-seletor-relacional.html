@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 5px solid blueviolet;
+            padding: 5px;
+            margin: 5px;
+            padding-left: 25px;
+            padding-right: 25px;
+            color: blue;
+        }
+
+        div > div {
+            border-color: firebrick;
+        }
+
+        div > div ~ div {
+            border-color: yellow;
+        }
+
+        div > div + div {
+            border-color: rosybrown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>
+            Item 3
+            <div>Filho 1 da div 3</div>
+            <p>texto no parágrafo</p>
+            <div>Filho 2 da div 3</div>
+        </div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+    </div>
+</body>
+
+</html>

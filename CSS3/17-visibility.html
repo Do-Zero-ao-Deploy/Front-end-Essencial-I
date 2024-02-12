@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caixa {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: solid brown;
+            margin: 1rem;
+            float: left;
+        }
+        .caixa-verde {
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+            border: solid brown;
+            margin: 1rem;
+            float: left;
+        }
+        .visibility-hidden {
+            visibility: hidden;
+        }
+
+        .caixa.hover-hidden:hover {
+            visibility: hidden;
+        }
+        .caixa.hover-visible:hover {
+            visibility: visible;
+        }
+        .caixa.hover-none:hover {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div ca>
+        <div class="caixa visibility-hidden">Caixa 1</div>
+        <div class="caixa-verde">
+            <div class="caixa hover-hidden">Caixa 2</div>
+        </div>
+        <div class="caixa">Caixa 3</div>
+        <div class="caixa hover-none">Caixa 4</div>
+        <div class="caixa">Caixa 5</div>
+    </div>
+</body>
+</html>

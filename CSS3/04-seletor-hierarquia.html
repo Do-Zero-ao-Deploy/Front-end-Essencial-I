@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 5px solid blueviolet;
+            padding: 5px;
+            margin: 5px;
+            padding-left: 25px;
+            padding-right: 25px;
+            color: blue;
+        }
+
+        section {
+            border: 5px solid teal;
+            padding: 5px;
+            margin: 5px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        div div {
+            color: deeppink;
+        }
+
+        div section > div {
+            color: tomato;
+        }
+
+        div section.abc > div {
+            color: slateblue;
+        }
+
+        div section.def > div {
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Texto na tag pai
+        <div>Texto na tag filho 1</div>
+        <section>
+            Texto na tag section 1
+            <div>Texto na div 1 de section 1</div>
+            <div>Texto na div 2 de section 1</div>
+            <div>Texto na div 3 de section 1</div>
+        </section>
+        <section class="abc">
+            Texto na tag section 2
+            <div>Texto na div 1 de section 2</div>
+            <div>Texto na div 2 de section 2</div>
+            <div>Texto na div 3 de section 2</div>
+        </section>
+        <div>Texto na tag filho 3</div>
+    </div>
+</body>
+</html>
