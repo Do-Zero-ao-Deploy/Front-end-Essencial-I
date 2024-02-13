@@ -60,7 +60,7 @@ get_header() {
     # Link para compra: https://chk.eduzz.com/atuuhb25
     echo -e "# Front-end Essencial I _(Web Essencial)_"
     echo -e "## [Jornada do Zero ao Deploy](https://dozeroaodeploy.com.br)"
-    echo -e "$(get_menu)"
+    # echo -e "$(get_menu)"
 }
 
 get_footer() {

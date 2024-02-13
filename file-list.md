@@ -1,18 +1,6 @@
 # Front-end Essencial I _(Web Essencial)_
 ## [Jornada do Zero ao Deploy](https://dozeroaodeploy.com.br)
 
-
-### Pastas
-
-  - [./HTML5-Basico](./HTML5-Basico)
-  - [./Javascript-Basico](./Javascript-Basico)
-  - [./Javascript-Basico/libs](./Javascript-Basico/libs)
-  - [./Javascript-Basico/tipos-de-dados](./Javascript-Basico/tipos-de-dados)
-  - [./Javascript-Basico/estruturas-de-controle](./Javascript-Basico/estruturas-de-controle)
-  - [./Javascript-Basico/operadores](./Javascript-Basico/operadores)
-  - [./CSS3](./CSS3)
--------------------------------------------------
-
 -------------------------------------------------
 ### [./HTML5-Basico](./HTML5-Basico)
 -------------------------------------------------
@@ -106,4 +94,4 @@
 
 
 -------------------------------------------------
-Gerado via `file-list-generator.sh` em `2024-02-12 22:37:47 -03`
+Gerado via `file-list-generator.sh` em `2024-02-12 22:44:02 -03`
