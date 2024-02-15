@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="funcoes.js"></script>
+</head>
+<body>
+    <div>
+        <input type="text" name="valor1" placeholder="valor1" onchange="mostraResultado()">
+        <br>
+        <input type="text" name="valor2" placeholder="valor2" onchange="mostraResultado()">
+        <br>
+        <select name="operador" onchange="mostraResultado()">
+            <option value="soma">+</option>
+            <option value="subt">-</option>
+            <option value="mult">*</option>
+            <option value="divi">/</option>
+        </select>
+        <br>
+        <span>Resultado:</span>
+        <br>
+        <strong data-element-id="resultado"></strong>
+        <br>
+    </div>
+    <button type="button" onclick="mostraResultado()">Botao</button>
+</body>
+</html>

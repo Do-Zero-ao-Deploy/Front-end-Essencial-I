@@ -2,6 +2,16 @@
 ## [Jornada do Zero ao Deploy](https://dozeroaodeploy.com.br)
 
 -------------------------------------------------
+### [./.vite](./.vite)
+-------------------------------------------------
+
+-------------------------------------------------
+### [./.vite/deps](./.vite/deps)
+-------------------------------------------------
+  - [`./.vite/deps/_metadata.json`](./.vite/deps/_metadata.json)
+  - [`./.vite/deps/package.json`](./.vite/deps/package.json)
+
+-------------------------------------------------
 ### [./HTML5-Basico](./HTML5-Basico)
 -------------------------------------------------
   - [`./HTML5-Basico/10-links.html`](./HTML5-Basico/10-links.html)
@@ -55,6 +65,16 @@
   - [`./Javascript-Basico/01-sintaxe.js`](./Javascript-Basico/01-sintaxe.js)
 
 -------------------------------------------------
+### [./Javascript-Basico/03-funcoes](./Javascript-Basico/03-funcoes)
+-------------------------------------------------
+
+-------------------------------------------------
+### [./Javascript-Basico/03-funcoes/funcoes-normais](./Javascript-Basico/03-funcoes/funcoes-normais)
+-------------------------------------------------
+  - [`./Javascript-Basico/03-funcoes/funcoes-normais/index.html`](./Javascript-Basico/03-funcoes/funcoes-normais/index.html)
+  - [`./Javascript-Basico/03-funcoes/funcoes-normais/funcoes.js`](./Javascript-Basico/03-funcoes/funcoes-normais/funcoes.js)
+
+-------------------------------------------------
 ### [./Javascript-Basico/operadores](./Javascript-Basico/operadores)
 -------------------------------------------------
   - [`./Javascript-Basico/operadores/operadores-de-comparacao.html`](./Javascript-Basico/operadores/operadores-de-comparacao.html)
@@ -87,11 +107,11 @@
   - [`./CSS3/18-tamanhos-fixos-e-relativos.html`](./CSS3/18-tamanhos-fixos-e-relativos.html)
 -------------------------------------------------
 #### Links
- - [Sobre o curso][https://dozeroaodeploy.com.br/]
- - [Link para compra][https://chk.eduzz.com/atuuhb25]
- - [Canal do Curso][https://www.youtube.com/channel/UCaIKqUtNnZme66qHdJAhCmQ?sub_confirmation=1]
+ - [Sobre o curso](https://dozeroaodeploy.com.br/)
+ - [Link para compra](https://chk.eduzz.com/atuuhb25)
+ - [Canal do Curso](https://www.youtube.com/channel/UCaIKqUtNnZme66qHdJAhCmQ?sub_confirmation=1)
 
 
 
 -------------------------------------------------
-Gerado via `file-list-generator.sh` em `2024-02-12 22:44:02 -03`
+Gerado via `file-list-generator.sh` em `2024-02-15 07:22:00 -03`
