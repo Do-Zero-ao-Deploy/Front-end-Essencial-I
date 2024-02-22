@@ -62,6 +62,11 @@
   - [`./Javascript-Basico/estruturas-de-controle/if-else.html`](./Javascript-Basico/estruturas-de-controle/if-else.html)
   - [`./Javascript-Basico/estruturas-de-controle/loops-for-of.html`](./Javascript-Basico/estruturas-de-controle/loops-for-of.html)
   - [`./Javascript-Basico/estruturas-de-controle/loops-for-comum.html`](./Javascript-Basico/estruturas-de-controle/loops-for-comum.html)
+
+-------------------------------------------------
+### [./Javascript-Basico/arrays](./Javascript-Basico/arrays)
+-------------------------------------------------
+  - [`./Javascript-Basico/arrays/01-apresentando-arrays.html`](./Javascript-Basico/arrays/01-apresentando-arrays.html)
   - [`./Javascript-Basico/01-sintaxe.js`](./Javascript-Basico/01-sintaxe.js)
 
 -------------------------------------------------
@@ -114,4 +119,4 @@
 
 
 -------------------------------------------------
-Gerado via `file-list-generator.sh` em `2024-02-15 07:22:00 -03`
+Gerado via `file-list-generator.sh` em `2024-02-22 11:20:29 -03`
