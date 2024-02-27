@@ -66,6 +66,7 @@
 -------------------------------------------------
 ### [./Javascript-Basico/arrays](./Javascript-Basico/arrays)
 -------------------------------------------------
+  - [`./Javascript-Basico/arrays/sort.html`](./Javascript-Basico/arrays/sort.html)
   - [`./Javascript-Basico/arrays/01-apresentando-arrays.html`](./Javascript-Basico/arrays/01-apresentando-arrays.html)
   - [`./Javascript-Basico/01-sintaxe.js`](./Javascript-Basico/01-sintaxe.js)
 
@@ -119,4 +120,4 @@
 
 
 -------------------------------------------------
-Gerado via `file-list-generator.sh` em `2024-02-22 11:20:29 -03`
+Gerado via `file-list-generator.sh` em `2024-02-27 08:34:03 -03`

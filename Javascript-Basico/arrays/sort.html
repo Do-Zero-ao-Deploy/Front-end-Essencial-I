@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    numeros = [4, 6, 7, 1, 3, 9, 0];
+    console.log('"numeros" antes do sort()', numeros);
+    numeros.sort();
+    console.log('"numeros" depois do sort()', numeros);
+
+    // ---------------------------------------------------------
+    cidades = ['São Paulo', 'Porto Velho', 'Curitiba', 'Natal', 'Cuiabá'];
+    console.log('"cidades" antes do sort()', cidades);
+    cidades.sort();
+    console.log('"cidades" depois do sort()', cidades);
+
+    // ---------------------------------------------------------
+    let pessoas = [{nome: 'Eliana', an: 1997}, {nome: 'Tiago', an: 1994}, {nome: 'Jonatas', an: 1995},];
+
+    console.log('"pessoas" antes do sort()', pessoas);
+    pessoas.sort(function(item1, item2) {
+        if (item1.an > item2.an) {
+            return 1;
+        }
+
+        if (item1.an < item2.an) {
+            return -1;
+        }
+
+        return 0;
+    });
+
+    console.log('"pessoas" depois do sort()', pessoas);
+</script>
+</body>
+</html>
