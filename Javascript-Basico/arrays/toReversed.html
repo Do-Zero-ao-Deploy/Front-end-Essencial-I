@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toReversed</title>
+</head>
+<body>
+    <div>
+        <h5>Nomes</h5>
+        <button type="button">Inverter Ordem</button>
+        <ul></ul>
+    </div>
+    <script>
+        let nomes = [
+            '#1 Tiago',
+            '#2 Vera',
+            '#3 Antônio',
+            '#4 Maria',
+            '#5 Paulo',
+        ];
+
+        let apresentarElementos = () => {
+            let list = document.querySelector('div > ul');
+
+            if (!list) {
+                return;
+            }
+
+            list.innerHTML = '';
+
+            nomes.forEach((nome, index) => {
+                let listItem = document.createElement('li');
+                listItem.innerHTML = nome;
+
+                list.appendChild(listItem);
+            })
+        }
+
+        apresentarElementos();
+
+        document.querySelector('div button').addEventListener('click', () => {
+            console.log('Click');
+            nomes = nomes.toReversed();
+            apresentarElementos();
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toLowerCase & toUpperCase</title>
+</head>
+<body>
+    <h5>toLowerCase & toUpperCase</h5>
+
+    <div>
+        <h6>toLowerCase()</h6>
+        <ul>
+            <li>Texto original: "MEU CONTEUDO"</li>
+            <li>"MEU CONTEUDO".toLowerCase()</li>
+            <li>Texto limpo: "meu conteudo"</li>
+        </ul>
+
+        <div style="align-content: start;display: flex;">
+            Texto REAL limpo: <pre
+                    data-real="1"
+                    style="position: relative;width: 50%;float: left;padding: 0;margin: 0;border: 1px dotted gray;"
+                ></pre>
+        </div>
+    </div>
+
+    <hr>
+
+    <div>
+        <h6>toUpperCase()</h6>
+        <ul>
+            <li>Texto original: "meu conteudo"</li>
+            <li>"meu conteudo".toUpperCase()</li>
+            <li>Texto limpo: "MEU CONTEUDO"</li>
+        </ul>
+
+        <div style="align-content: start;display: flex;">
+            Texto REAL limpo: <pre
+                    data-real="2"
+                    style="position: relative;width: 50%;float: left;padding: 0;margin: 0;border: 1px dotted gray;"
+                ></pre>
+        </div>
+    </div>
+
+    <script>
+        let texto = 'Tiago França Fernandes';
+
+        let realElement1 = document.querySelector('[data-real="1"]');
+
+        if (realElement1) {
+            realElement1.innerHTML = texto.toLowerCase();
+        }
+
+        let realElement2 = document.querySelector('[data-real="2"]');
+
+        if (realElement2) {
+            realElement2.innerHTML = texto.toUpperCase();
+        }
+    </script>
+</body>
+</html>

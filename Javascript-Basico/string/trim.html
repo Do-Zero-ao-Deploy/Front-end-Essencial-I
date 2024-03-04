@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trim</title>
+</head>
+<body>
+    <h5>trim</h5>
+
+    <div>
+        <h6>trim()</h6>
+        <ul>
+            <li>Texto original: " meu conteudo   "</li>
+            <li>" meu conteudo   ".trim()</li>
+            <li>Texto limpo: "meu conteudo"</li>
+        </ul>
+
+        <div style="align-content: start;display: flex;">
+            Texto REAL limpo: <pre
+                    data-real="1"
+                    style="position: relative;width: 50%;float: left;padding: 0;margin: 0;border: 1px dotted gray;"
+                ></pre>
+        </div>
+    </div>
+
+    <script>
+        let texto = '                 sdssdds                 ';
+
+        let realElement = document.querySelector('[data-real="1"]');
+
+        if (realElement) {
+            realElement.innerHTML = texto.trim();
+        }
+    </script>
+</body>
+</html>

@@ -68,7 +68,26 @@
 -------------------------------------------------
   - [`./Javascript-Basico/arrays/sort.html`](./Javascript-Basico/arrays/sort.html)
   - [`./Javascript-Basico/arrays/01-apresentando-arrays.html`](./Javascript-Basico/arrays/01-apresentando-arrays.html)
+  - [`./Javascript-Basico/arrays/toReversed.html`](./Javascript-Basico/arrays/toReversed.html)
+  - [`./Javascript-Basico/arrays/slice.html`](./Javascript-Basico/arrays/slice.html)
   - [`./Javascript-Basico/01-sintaxe.js`](./Javascript-Basico/01-sintaxe.js)
+
+-------------------------------------------------
+### [./Javascript-Basico/string](./Javascript-Basico/string)
+-------------------------------------------------
+  - [`./Javascript-Basico/string/substring.html`](./Javascript-Basico/string/substring.html)
+  - [`./Javascript-Basico/string/repeat.html`](./Javascript-Basico/string/repeat.html)
+  - [`./Javascript-Basico/string/includes.html`](./Javascript-Basico/string/includes.html)
+  - [`./Javascript-Basico/string/concat.html`](./Javascript-Basico/string/concat.html)
+  - [`./Javascript-Basico/string/indexOf-lastIndexOf.html`](./Javascript-Basico/string/indexOf-lastIndexOf.html)
+  - [`./Javascript-Basico/string/endsWith.html`](./Javascript-Basico/string/endsWith.html)
+  - [`./Javascript-Basico/string/split.html`](./Javascript-Basico/string/split.html)
+  - [`./Javascript-Basico/string/startsWith.html`](./Javascript-Basico/string/startsWith.html)
+  - [`./Javascript-Basico/string/chatAt.html`](./Javascript-Basico/string/chatAt.html)
+  - [`./Javascript-Basico/string/replace-replaceAll.html`](./Javascript-Basico/string/replace-replaceAll.html)
+  - [`./Javascript-Basico/string/trim.html`](./Javascript-Basico/string/trim.html)
+  - [`./Javascript-Basico/string/slice.html`](./Javascript-Basico/string/slice.html)
+  - [`./Javascript-Basico/string/toLowerCase-toUpperCase.html`](./Javascript-Basico/string/toLowerCase-toUpperCase.html)
 
 -------------------------------------------------
 ### [./Javascript-Basico/03-funcoes](./Javascript-Basico/03-funcoes)
@@ -120,4 +139,4 @@
 
 
 -------------------------------------------------
-Gerado via `file-list-generator.sh` em `2024-02-27 08:34:03 -03`
+Gerado via `file-list-generator.sh` em `2024-03-04 20:34:39 -03`

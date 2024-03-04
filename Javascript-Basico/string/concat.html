@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        va1 = 'abc' // var2 = 'def' // "def"
+        var3 = 'ghi' // "ghi"
+        var4 = var1 + var2 + var3 // "abcdefghi"
+        var4 = `${var1} ${var2} ${var3}` // "abc def ghi"
+        var4 = `${var1}${var2}${var3}` // "abcdefghi"
+        var4 = var1 + ' ' + var2 + ' ' + var3 // "abc def ghi"
+        var5 = 'xyz' // "xyz"
+        var5 = var5 + var1 // "xyzabc"
+        var5 = var5 + var2 // "xyzabcdef"
+        var5 = var5 + var3 // "xyzabcdefghi"
+        var5 = 'xyz' // "xyz"
+        var5 += var1 // "xyzabc"
+        var5 += var2 // "xyzabcdef"
+        var5 += var3 // "xyzabcdefghi"
+        var6 = 'gtr' // "gtr"
+        var6.concat(var1, var2, var3) // "gtrabcdefghi"
+        var6.concat(var1, ' ', var2, ' ', var3) // "gtrabc def ghi"
+        var6.concat(' ', var1, ' ', var2, ' ', var3) // "gtr abc def ghi"
+        var6 // "gtr"
+        var6 = var6.concat(' ', var1, ' ', var2, ' ', var3) // "gtr abc def ghi"
+        var6 // "gtr abc def ghi"
+        [var1, var2, var3].join('') // "abcdefghi"
+        [var1, var2, var3].join(' ') // "abc def ghi"
+        var6 = '' // ""
+        var6 = var6.concat([var1, var2, var3]) // "abc,def,ghi"
+        var6 = var6.concat(...[var1, var2, var3]) // "abc,def,ghiabcdefghi"
+        var6 = '' // ""
+        var6 = var6.concat(...[var1, var2, var3]) // "abcdefghi"
+        var6 = [var1, var2, var3].join('') // "abcdefghi"
+        var6 = [var1, var2, var3].join(' ') // "abc def ghi"
+    </script>
+</body>
+</html>
