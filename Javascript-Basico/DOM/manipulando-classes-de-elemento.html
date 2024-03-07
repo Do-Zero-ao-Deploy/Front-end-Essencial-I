@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color-red { color: red; }
+        .color-green { color: green; }
+        .color-blue { color: blue; }
+        .text-bold { font-weight: bold; }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span data-id="item1" class="abc1 abc2 abc3 ab90 abc56">Lorem ipsum dolor sit amet.</span>
+    </div>
+
+    <div>
+        <button onclick="mostrarOcultar()" type="button">
+            mostrarOcultar()
+        </button>
+    </div>
+    <br>
+
+    <div>
+        <button onclick="setClasses('color-red text-bold')" type="button">
+            setClasses('color-red text-bold')
+        </button>
+    </div>
+    <br>
+    <div>
+        <button onclick="setClasses('color-blue')" type="button">
+            setClasses('color-blue')
+        </button>
+    </div>
+    <br>
+    <div>
+        <button onclick="setClasses('color-green text-bold')" type="button">
+            setClasses('color-green text-bold')
+        </button>
+    </div>
+    <br>
+
+<script>
+    function setClasses(...classes) {
+        document.querySelector('[data-id="item1"]').setAttribute('class', classes.join(' '));
+    }
+
+    function mostrarOcultar() {
+        document.querySelector('[data-id="item1"]').classList.toggle('hidden');
+    }
+
+    // document.querySelector('[data-id="item1"]').classList.add('minha-classe')    // Adiciona classe
+    // document.querySelector('[data-id="item1"]').classList.remove('minha-classe') // Remove classe
+    // document.querySelector('[data-id="item1"]').classList.toggle('minha-classe') // Remove se existir ou adiciona se não existir
+    // document.querySelector('[data-id="item1"]').classList.replace('classe-atual', 'nova-classe') // Substitui uma classe por outra
+</script>
+</body>
+</html>

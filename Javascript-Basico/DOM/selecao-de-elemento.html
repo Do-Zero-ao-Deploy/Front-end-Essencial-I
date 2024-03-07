@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>span 1</span>
+    <span>span 2</span>
+<p>
+    <span>Meu texto inicial</span> <strong>meu texto dentro da tag strong</strong>
+</p>
+
+<script>
+    // querySelector: pega o PRIMEIRO elemento que o seletor identificar
+    let spanDentroDoParagrafo = document.querySelector('p span'); // Seleção de elemento (pega o primeiro)
+
+    if (spanDentroDoParagrafo) {
+        spanDentroDoParagrafo.innerText = 'Novo conteúdo do span';
+    }
+
+    // querySelectorAll: pega TODOS os elementos que o seletor identificar
+    /*
+    document.querySelectorAll('span').forEach((span, index) => {
+        span.innerText = 'Conteudo alterado #' + (index+1);
+    })
+    */
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .toggle-state {
+            cursor: pointer;
+            margin: 0.1rem 0.2rem;
+            padding: 0;
+            background: transparent;
+            border: 0;
+        }
+
+        li[done="1"] span{
+            text-decoration: line-through;
+            font-style: italic;
+            color: #918989;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <input type="text" name="taskName" placeholder="Tarefa">
+        </div>
+
+        <div>
+            <button type="button" onclick="adicionar()">Adicionar item</button>
+        </div>
+
+        <ul></ul>
+    </div>
+<script>
+function adicionar() {
+    let taskName = document.querySelector('input[name="taskName"]');
+
+    if (!taskName) {
+        return;
+    }
+
+    let taskNameValue = `${taskName.value}`.trim();
+
+    if (!taskNameValue) {
+        taskName.value = '';
+        taskName.focus();
+        return;
+    }
+
+    let list = document.querySelector('ul');
+    let listItem = document.createElement('li');
+    listItem.setAttribute('done', 0);
+
+    let listItemText = document.createElement('span');
+    let listItemToggleState = document.createElement('button');
+    listItemToggleState.setAttribute('type', 'button');
+    listItemToggleState.innerText = '🟩';
+    listItemToggleState.classList.add('toggle-state');
+    listItemToggleState.addEventListener('click', (event) => {
+        // event.target.parentElement
+        let done = !!parseInt(listItem.getAttribute('done'));
+        listItem.setAttribute(
+            'done',
+            done ? 0 : 1
+        );
+
+        event.target.innerText = done ? '🟩' : '✅';
+    });
+
+    listItemText.innerText = taskNameValue;
+    listItem.appendChild(listItemToggleState);
+    listItem.appendChild(listItemText);
+    taskName.value = '';
+
+    list.appendChild(listItem);
+    taskName.focus()
+}
+</script>
+</body>
+</html>

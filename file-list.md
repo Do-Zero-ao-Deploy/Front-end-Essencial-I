@@ -49,6 +49,11 @@
 -------------------------------------------------
   - [`./Javascript-Basico/tipos-de-dados/tipos-array-object-function-NaN-undefined.html`](./Javascript-Basico/tipos-de-dados/tipos-array-object-function-NaN-undefined.html)
   - [`./Javascript-Basico/tipos-de-dados/tipos-string-number-bool-null.html`](./Javascript-Basico/tipos-de-dados/tipos-string-number-bool-null.html)
+
+-------------------------------------------------
+### [./Javascript-Basico/eventos](./Javascript-Basico/eventos)
+-------------------------------------------------
+  - [`./Javascript-Basico/eventos/ouvindo-eventos-do-teclado.html`](./Javascript-Basico/eventos/ouvindo-eventos-do-teclado.html)
   - [`./Javascript-Basico/01-sintaxe.html`](./Javascript-Basico/01-sintaxe.html)
 
 -------------------------------------------------
@@ -71,6 +76,14 @@
   - [`./Javascript-Basico/arrays/toReversed.html`](./Javascript-Basico/arrays/toReversed.html)
   - [`./Javascript-Basico/arrays/slice.html`](./Javascript-Basico/arrays/slice.html)
   - [`./Javascript-Basico/01-sintaxe.js`](./Javascript-Basico/01-sintaxe.js)
+
+-------------------------------------------------
+### [./Javascript-Basico/DOM](./Javascript-Basico/DOM)
+-------------------------------------------------
+  - [`./Javascript-Basico/DOM/selecao-de-elemento.html`](./Javascript-Basico/DOM/selecao-de-elemento.html)
+  - [`./Javascript-Basico/DOM/manipulando-classes-de-elemento.html`](./Javascript-Basico/DOM/manipulando-classes-de-elemento.html)
+  - [`./Javascript-Basico/DOM/manipulando-atributos-de-elemento.html`](./Javascript-Basico/DOM/manipulando-atributos-de-elemento.html)
+  - [`./Javascript-Basico/DOM/criando-elementos-com-js.html`](./Javascript-Basico/DOM/criando-elementos-com-js.html)
 
 -------------------------------------------------
 ### [./Javascript-Basico/string](./Javascript-Basico/string)
@@ -139,4 +152,4 @@
 
 
 -------------------------------------------------
-Gerado via `file-list-generator.sh` em `2024-03-04 20:34:39 -03`
+Gerado via `file-list-generator.sh` em `2024-03-07 00:06:48 -03`

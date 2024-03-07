@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Sua senha</label>
+    <input type="password" placeholder="Sua senha" value="senha123">
+
+    <button onclick="disableInput()" type="button">disableInput()</button>
+    <button onclick="enableInput()" type="button">enableInput()</button>
+    <button onclick="showHide()" type="button">showHide()</button>
+
+<script>
+    function disableInput() {
+        document.querySelector('input').setAttribute('disabled', '');
+    }
+
+    function enableInput() {
+        document.querySelector('input').removeAttribute('disabled', '');
+    }
+
+    function showHide() {
+        document.querySelector('input').setAttribute(
+            'type',
+            document.querySelector('input').getAttribute('type') === 'password' ? 'text' : 'password'
+        );
+    }
+</script>
+</body>
+</html>
