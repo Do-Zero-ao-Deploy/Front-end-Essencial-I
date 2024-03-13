@@ -53,6 +53,7 @@
 -------------------------------------------------
 ### [./Javascript-Basico/eventos](./Javascript-Basico/eventos)
 -------------------------------------------------
+  - [`./Javascript-Basico/eventos/disparando-eventos-nativos.html`](./Javascript-Basico/eventos/disparando-eventos-nativos.html)
   - [`./Javascript-Basico/eventos/ouvindo-eventos-do-teclado.html`](./Javascript-Basico/eventos/ouvindo-eventos-do-teclado.html)
   - [`./Javascript-Basico/01-sintaxe.html`](./Javascript-Basico/01-sintaxe.html)
 
@@ -152,4 +153,4 @@
 
 
 -------------------------------------------------
-Gerado via `file-list-generator.sh` em `2024-03-07 00:06:48 -03`
+Gerado via `file-list-generator.sh` em `2024-03-13 08:57:56 -03`

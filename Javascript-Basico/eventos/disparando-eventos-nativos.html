@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"] {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type="text" data-id="input-1" placeholder="Meu input">
+</div>
+
+<div>
+    <button type="button" data-id="setInitialInput" value="">setInitialInput</button>
+    <button type="button" data-id="reset">Reset</button>
+    <p data-texto-quando-alterado="xyz">Valor inicial</p>
+</div>
+
+<script>
+    document.querySelector('button[data-id="setInitialInput"]')
+        .addEventListener('click', event => {
+            document.querySelector('input[data-id="input-1"]').value = 'Novo valor no input ' + (new Date()).toISOString();
+        })
+
+    document.querySelector('button[data-id="reset"]')
+        .addEventListener('click', event => {
+            document.querySelector('[data-texto-quando-alterado="xyz"]').innerText = '';
+        })
+
+    document.querySelector('input[data-id="input-1"]')
+        .addEventListener('change', event => {
+            console.log('event', event);
+
+            document.querySelector('[data-texto-quando-alterado="xyz"]')
+                .innerText = 'Conteúdo alterado em '  + (new Date()).toISOString();
+        })
+</script>
+</body>
+</html>
