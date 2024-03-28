@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div><textarea name="mensagem" cols="50" rows="10" placeholder="Mensagem"></textarea></div>
+        <div>
+            <ul data-id="notificacao-container"></ul>
+        </div>
+    </div>
+    <div>
+        <button type="button" name="cria_notificacao">Criar Notificação</button>
+    </div>
+
+<script>
+    window.notificacoes = [
+        // {
+        //     mensagem: 'Abc',
+        //     data: new Date()
+        // },
+    ];
+
+    function criarNotificacao() {
+        let mensagemElement = document.querySelector('[name="mensagem"]');
+
+        if (!mensagemElement) {
+            return;
+        }
+
+        let mensagem = (mensagemElement?.value).trim();
+        mensagemElement.value = '';
+
+        if (!mensagem) {
+            return;
+        }
+
+        // Criação do evento customizado
+        const novaNotificacaoEvent = new CustomEvent('novaNotificacao', {
+            detail: {
+                mensagem: mensagem,
+                data: new Date(),
+                qualquerOutraCoisa: [
+                    123, 435465,
+                ],
+                qualquerOutraCoisa2: {
+                    xyz: 123
+                }
+            }
+        });
+
+        document.dispatchEvent(novaNotificacaoEvent);
+    }
+
+    function mostrarNotificacoes() {
+        let notificacaoContainer = document.querySelector('[data-id="notificacao-container"]');
+
+        if (!notificacaoContainer) {
+            return;
+        }
+
+        notificacaoContainer.innerHTML = '';
+
+        window.notificacoes.forEach(notificacao => {
+            let date = notificacao.data.toLocaleString('pt-BR');
+            let child = document.createElement('li');
+            child.innerHTML = `
+            <p>${notificacao.mensagem}<br> <sub><strong>${date}</strong></sub> </p>`;
+            notificacaoContainer.prepend(child);
+        })
+    }
+
+    // Escuta do evento no cabeçalho
+    document.addEventListener('novaNotificacao', function(e) {
+        console.log('Detalhe do evento "novaNotificacao"', e.detail);
+        window.notificacoes.push(e.detail);
+        mostrarNotificacoes();
+    });
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelector('[name="cria_notificacao"]')?.addEventListener('click', event => {
+            criarNotificacao();
+        });
+        mostrarNotificacoes();
+    });
+</script>
+</body>
+</html>

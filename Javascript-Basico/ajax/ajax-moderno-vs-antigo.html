@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    // Com fetch
+    fetch('https://tiagofranca.com')
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
+
+    // Com XMLHttpRequest
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://tiagofranca.com', true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+        var data = JSON.parse(xhr.responseText);
+        console.log(data);
+        }
+    };
+    xhr.onerror = function() {
+        console.error('Error:', xhr.statusText);
+    };
+    xhr.send();
+</script>
+</body>
+</html>
