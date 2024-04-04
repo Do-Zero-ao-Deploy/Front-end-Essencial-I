@@ -18,6 +18,7 @@ if (!isset($_SESSION)) {
     </style>
 </head>
 <body>
+    <h5>Requisição ASSÍNCRONA (async)</h5>
     <div>
         <form action="sync-put-session.php">
             <input type="hidden" name="_key" value="pessoas">

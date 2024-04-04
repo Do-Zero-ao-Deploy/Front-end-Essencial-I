@@ -12,8 +12,16 @@ $pessoas = (array) ($_SESSION['pessoas'] ?? []);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sync-list.php</title>
+    <style>
+        table {
+            min-width: 45%;
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+        }
+    </style>
 </head>
 <body>
+<h5>Requisição SÍNCRONA (sync)</h5>
     <div>
         <form action="sync-put-session.php">
             <input type="hidden" name="redirect_to" value="<?= $redirectTo ?>">
